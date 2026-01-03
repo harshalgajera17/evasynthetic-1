@@ -2270,6 +2270,11 @@
     border: 0 !important;
   }
 }
+@media screen and (max-width: 640px) {
+  .about-pg-style1 .tc-process-style2 .imgs .img {
+    width: 100% !important;
+  }
+}
 .about-pg-style1 .tc-projects-style2 {
   position: relative;
   padding-top: 110px;
@@ -2740,6 +2745,11 @@
     margin-top: 50px;
     height: 350px;
   }
+  .services-pg-style1 .tc-process-style1 .img.animated {
+  -webkit-transform: rotate(0deg) scale(1);
+          transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
 }
 .services-pg-style1 .tc-testimonials-style1 {
   position: relative;
