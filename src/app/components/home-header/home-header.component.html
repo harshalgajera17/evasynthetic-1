@@ -1,0 +1,231 @@
+@if (languageDirection === 'ltr') {
+    <div class="ltr" *transloco="let t">
+        <!--  Start header  -->
+        <div class="tc-header-style1">
+            <div class="header-slider">
+                <div class="owl-carousel owl-header owl-theme swiper-wrapper">
+                    <div class="item swiper-slide">
+                        <div class="slider-card">
+                            <div class="img">
+                                <img src="images/head_slide1.jpg" alt="slider image" class="img-cover">
+                            </div>
+                            <div class="info section-padding-x pb-70">
+                                <div class="row align-items-end gx-5">
+                                    <div class="col-lg-6">
+                                        <h1 data-swiper-parallax="-2000" class="js-title wow"> {{ t('comfort') }} </h1>
+                                        <h5 class="fsz-30 mt-30 fw-400"> {{ t('home-subtitle-1') }} </h5>
+                                    </div>
+                                    <div class="col-lg-3 offset-lg-2">
+                                        <div class="cont pb-30">
+                                            <div class="text fsz-17 fw-300 lh-4">
+                                                {{ t('home-p1') }}
+                                            </div>
+                                            <a routerLink="/products" class="butn border rounded-pill mt-60 hover-bg-white">
+                                                <span> {{ t('our product') }} <i class="fa-light fa-arrow-up-right small ms-1"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item swiper-slide">
+                        <div class="slider-card">
+                            <div class="img">
+                                <img src="images/head_slide2.png" alt="slider image" class="img-cover">
+                            </div>
+                            <div class="info section-padding-x pb-70">
+                                <div class="row align-items-end gx-5">
+                                    <div class="col-lg-6">
+                                        <h1 data-swiper-parallax="-2000" class="js-title wow"> {{ t('style') }} </h1>
+                                        <h5 class="fsz-30 mt-30 fw-400"> {{ t('home-subtitle-2') }} </h5>
+                                    </div>
+                                    <div class="col-lg-3 offset-lg-2">
+                                        <div class="cont pb-30">
+                                            <div class="text fsz-17 fw-300 lh-4">
+                                                {{ t('home-p2') }}
+                                            </div>
+                                            <a routerLink="/products" class="butn border rounded-pill mt-60 hover-bg-white">
+                                                <span> {{ t('our product') }} <i class="fa-light fa-arrow-up-right small ms-1"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item swiper-slide">
+                        <div class="slider-card">
+                            <div class="img">
+                                <img src="images/head_slide3.png" alt="slider image" class="img-cover">
+                            </div>
+                            <div class="info section-padding-x pb-70">
+                                <div class="row align-items-end gx-5">
+                                    <div class="col-lg-6">
+                                        <h1 data-swiper-parallax="-2000" class="js-title wow"> {{ t('innovation') }} </h1>
+                                        <h5 class="fsz-30 mt-30 fw-400"> {{ t('home-subtitle-3') }} </h5>
+                                    </div>
+                                    <div class="col-lg-3 offset-lg-2">
+                                        <div class="cont pb-30">
+                                            <div class="text fsz-17 fw-300 lh-4">
+                                                {{ t('home-p3') }}
+                                            </div>
+                                            <a routerLink="/products" class="butn border rounded-pill mt-60 hover-bg-white">
+                                                <span> {{ t('our product') }} <i class="fa-light fa-arrow-up-right small ms-1"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item swiper-slide">
+                        <div class="slider-card">
+                            <div class="img">
+                                <img src="images/head_slide4.png" alt="slider image" class="img-cover">
+                            </div>
+                            <div class="info section-padding-x pb-70">
+                                <div class="row align-items-end gx-5">
+                                    <div class="col-lg-6">
+                                        <h1 data-swiper-parallax="-2000" class="js-title wow"> {{ t('trust') }} </h1>
+                                        <h5 class="fsz-30 mt-30 fw-400"> {{ t('home-subtitle-4') }} </h5>
+                                    </div>
+                                    <div class="col-lg-3 offset-lg-2">
+                                        <div class="cont pb-30">
+                                            <div class="text fsz-17 fw-300 lh-4">
+                                                {{ t('home-p1') }}
+                                                {{ t('our product') }}
+                                            </div>
+                                            <a routerLink="/products" class="butn border rounded-pill mt-60 hover-bg-white">
+                                                <span> {{ t('our product') }} <i class="fa-light fa-arrow-up-right small ms-1"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Start header  -->
+        
+    </div>
+} @else if (languageDirection === 'rtl') {
+    <div class="rtl" *transloco="let t">
+        <!--  Start header  -->
+        <div class="tc-header-style1">
+            <div class="header-slider">
+                <div class="owl-carousel owl-header owl-theme swiper-wrapper">
+                    <div class="item swiper-slide">
+                        <div class="slider-card">
+                            <div class="img">
+                                <img src="images/head_slide1.jpg" alt="slider image" class="img-cover">
+                            </div>
+                            <div class="info section-padding-x pb-70">
+                                <div class="row align-items-end gx-5 justify-content-end">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <h1 data-swiper-parallax="-2000" class="js-title wow"> {{ t('comfort') }} </h1>
+                                        <h5 class="fsz-30 mt-30 fw-400"> {{ t('home-subtitle-1') }} </h5>
+                                    </div>
+                                    <div class="col-lg-3 offset-lg-2 order-lg-1">
+                                        <div class="cont pb-30">
+                                            <div class="text fsz-17 fw-300 lh-4">
+                                                {{ t('home-p1') }}
+                                            </div>
+                                            <a routerLink="/products" class="butn border rounded-pill mt-60 hover-bg-white">
+                                                <span> {{ t('our product') }} <i class="fa-light fa-arrow-up-right small ms-1"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item swiper-slide">
+                        <div class="slider-card">
+                            <div class="img">
+                                <img src="images/head_slide2.png" alt="slider image" class="img-cover">
+                            </div>
+                            <div class="info section-padding-x pb-70">
+                                <div class="row align-items-end gx-5 justify-content-end">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <h1 data-swiper-parallax="-2000" class="js-title wow"> {{ t('style') }} </h1>
+                                        <h5 class="fsz-30 mt-30 fw-400"> {{ t('home-subtitle-2') }} </h5>
+                                    </div>
+                                    <div class="col-lg-3 offset-lg-2 order-lg-1">
+                                        <div class="cont pb-30">
+                                            <div class="text fsz-17 fw-300 lh-4">
+                                                {{ t('home-p2') }}
+                                            </div>
+                                            <a routerLink="/products" class="butn border rounded-pill mt-60 hover-bg-white">
+                                                <span> {{ t('our product') }} <i class="fa-light fa-arrow-up-right small ms-1"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item swiper-slide">
+                        <div class="slider-card">
+                            <div class="img">
+                                <img src="images/head_slide3.png" alt="slider image" class="img-cover">
+                            </div>
+                            <div class="info section-padding-x pb-70">
+                                <div class="row align-items-end gx-5 justify-content-end">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <h1 data-swiper-parallax="-2000" class="js-title wow"> {{ t('innovation') }} </h1>
+                                        <h5 class="fsz-30 mt-30 fw-400"> {{ t('home-subtitle-3') }} </h5>
+                                    </div>
+                                    <div class="col-lg-3 offset-lg-2 order-lg-1">
+                                        <div class="cont pb-30">
+                                            <div class="text fsz-17 fw-300 lh-4">
+                                                {{ t('home-p3') }}
+                                            </div>
+                                            <a routerLink="/products" class="butn border rounded-pill mt-60 hover-bg-white">
+                                                <span> {{ t('our product') }} <i class="fa-light fa-arrow-up-right small ms-1"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item swiper-slide">
+                        <div class="slider-card">
+                            <div class="img">
+                                <img src="images/head_slide4.png" alt="slider image" class="img-cover">
+                            </div>
+                            <div class="info section-padding-x pb-70">
+                                <div class="row align-items-end gx-5 justify-content-end">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <h1 data-swiper-parallax="-2000" class="js-title wow"> {{ t('trust') }} </h1>
+                                        <h5 class="fsz-30 mt-30 fw-400"> {{ t('home-subtitle-4') }} </h5>
+                                    </div>
+                                    <div class="col-lg-3 offset-lg-2 order-lg-1">
+                                        <div class="cont pb-30">
+                                            <div class="text fsz-17 fw-300 lh-4">
+                                                {{ t('home-p1') }}
+                                            </div>
+                                            <a routerLink="/products" class="butn border rounded-pill mt-60 hover-bg-white">
+                                                <span> {{ t('our product') }} <i class="fa-light fa-arrow-up-right small ms-1"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Start header  -->
+    </div>
+}

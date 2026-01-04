@@ -1,0 +1,30 @@
+add
+EN - English 
+UK - united kingdom
+AR - arabic
+RU - russian
+
+
+Home page
+Header background blur and active page link highelight like: iphone glass effect.
+arrange homepage banner slider images, and remove "our product" button.
+add .gif file in abour section and Experiance in 10years.
+our product section image width, height and contain arrange and number wise set images.
+our product section bottom image change.
+Our process work section image change.
+Our latest cases -> Our latest product and set 3 latest product image.
+remove testimonial section and set review.
+on footer address change, email id change.
+
+About
+10 year experiance and Since 2015
+98%
+Our approach process - section add factoury images bubbole
+
+Our product page
+product category section
+product image listing
+
+Contact us page
+Contact form - add phone number with flag
+Google map

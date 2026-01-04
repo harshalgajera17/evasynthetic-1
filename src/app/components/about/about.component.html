@@ -1,0 +1,459 @@
+@if (languageDirection === 'ltr') {
+    <div class="inner-pages-style1 about-pg-style1 ltr" *transloco="let t">
+        <!--  Start header  -->
+        <div class="tc-inner-header-style1 pb-100 pt-100">
+            <div class="container">
+                <div class="info">
+                    <h1 class="js-title"> {{ t('about us') }} </h1>
+                    <div class="text fsz-18 color-fff"> {{ t('about-page-subtitle') }} </div>
+                </div>
+            </div>
+        </div>
+        <!--  Start header  -->    
+        
+        <!--Contents-->
+        <main>
+            <!--  Start experience  -->
+            <div class="home-style1">
+                <section class="tc-experience-style1 section-padding-x">
+                    <div class="container-fluid">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-lg-1">
+                                <div class="exp-num mb-100 wow zoomIn" data-wow-delay="0.3s">
+                                    <h5 class="fsz-18 text-uppercase"> {{ t('years of') }} <br> {{ t('experience') }} </h5>
+                                    <h2 class="num"> 15 </h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="img wow">
+                                    <img src="images/exp.png" alt="" class="img-cover">
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="info wow fadeInUp" data-wow-delay="0.3s">
+                                    <h3 class="fsz-45 fw-600 mb-30"> {{ t('about us') }} </h3>
+                                    <div class="text fsz-15 color-666">
+                                        <p class="mb-2">
+                                            {{ t('about-p1') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p2') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p3') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p4') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p5') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p6') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p7') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p8') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p9') }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/c_line.png" alt="" class="c-line wow">
+                </section>
+            </div>
+            <!--  End experience  -->
+    
+    
+            <!--  Start about  -->
+            <section class="tc-about-style7">
+                <div class="container">
+                    <div class="row gx-0 justify-content-between">
+                        <div class="col-lg-3">
+                            <div class="about-page-rotate">
+                                <div class="rotate-box" data-speed="1" data-lag="0.4">
+                                    <div class="rotate-circle fsz-35 rotate-text d-inline-block text-uppercase">
+                                        <svg class="textcircle" viewBox="0 0 500 500">
+                                            <defs>
+                                                <path id="textcircle"
+                                                    d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z">
+                                                </path>
+                                            </defs>
+                                            <text>
+                                                <textPath xlink:href="#textcircle" textLength="900"> • {{ t('years of experience') }} • {{ t('since') }} 1991 </textPath>
+                                            </text>
+                                        </svg>
+                                    </div>
+                                    <span class="num"> 25 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="info wow fadeInUp slow" data-wow-delay="0.2s">
+                                <div class="text fsz-25 fw-500 mb-20">
+                                    {{ t('about-p10') }}                                
+                                </div>
+                                <div class="text fsz-25 fw-500 mb-20">
+                                    {{ t('about-p11') }}                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="numbers mt-5 mt-lg-0">
+                                <div class="number-card wow zoomIn slow" data-wow-delay="0.4s">
+                                    <h2 class="numb"> 95% </h2>
+                                    <small> {{ t('clients Satisfied and repeating') }} </small>
+                                </div>
+                                <div class="number-card wow zoomIn slow" data-wow-delay="0.6s">
+                                    <h2 class="numb"> 100% </h2>
+                                    <small> {{ t('deals done') }} </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  End about  -->
+        
+        
+            <!--  Start process  -->
+            <section class="tc-process-style2">
+                <div class="container">
+                    <h2 class="fsz-45 fw-500 mb-80 text-center"> {{ t('our approach') }} <span class="sub-font fst-italic color-orange1 fw-400"> {{ t('process') }} </span> </h2>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="accordion-side wow fadeInUp slow">
+                                    <div class="accordion" id="accordionProcess">
+                                        <div class="accordion-item">
+                                        <div class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                                <span class="num"> 1 / </span> <h3> {{ t('survey') }} </h3>
+                                            </button>
+                                        </div>
+                                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionProcess">
+                                            <div class="accordion-body">
+                                                <div class="text">
+                                                    {{ t('about-p12') }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                        <div class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                                <span class="num"> 2 / </span> <h3> {{ t('design') }} </h3>
+                                            </button>
+                                        </div>
+                                        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionProcess">
+                                            <div class="accordion-body">
+                                                <div class="text">
+                                                    {{ t('about-p13') }}                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                        <div class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                                <span class="num"> 3 / </span> <h3> {{ t('implement') }} </h3>
+                                            </button>
+                                        </div>
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionProcess">
+                                            <div class="accordion-body">
+                                                <div class="text">
+                                                    {{ t('about-p14') }}                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                                <span class="num"> 4 / </span> <h3> {{ t('handover') }} </h3>
+                                            </button>
+                                            </div>
+                                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionProcess">
+                                            <div class="accordion-body">
+                                                <div class="text">
+                                                    {{ t('about-p15') }}
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="imgs">
+                                    <div class="img" data-lag="0.2">
+                                        <img src="images/innerpages/process/proc1.jpg" alt="" class="img-cover">
+                                        <span class="txt sub-font"> {{ t('design') }} </span>
+                                    </div>
+                                    <div class="img" data-lag="0.4">
+                                        <img src="images/innerpages/process/proc2.jpg" alt="" class="img-cover">
+                                        <span class="txt sub-font"> {{ t('handover') }} </span>
+                                    </div>
+                                    <div class="img" data-lag="0.3">
+                                        <img src="images/innerpages/process/proc3.jpg" alt="" class="img-cover">
+                                        <span class="txt sub-font"> {{ t('survey') }} </span>
+                                    </div>
+                                    <div class="img" data-lag="0.5">
+                                        <img src="images/innerpages/process/proc4.jpg" alt="" class="img-cover">
+                                        <span class="txt sub-font"> {{ t('implement') }} </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/prc_bg.png" alt="" class="bg" data-speed="1.2">
+            </section>
+            <!--  End process  -->
+    
+            <!--  Start testimonials  -->
+            <div class="pt-100">
+                <app-testimonial></app-testimonial>
+            </div>
+            <!--  End testimonials  -->
+        </main>
+        <!--End-Contents-->
+    </div>
+} @else if (languageDirection === 'rtl') {
+    <div class="inner-pages-style1 about-pg-style1 rtl" *transloco="let t">
+        <!--  Start header  -->
+        <div class="tc-inner-header-style1 pb-100 pt-100">
+            <div class="container">
+                <div class="info">
+                    <h1 class="js-title"> {{ t('about us') }} </h1>
+                    <div class="text fsz-18 color-fff"> {{ t('about-page-subtitle') }} </div>
+                </div>
+            </div>
+        </div>
+        <!--  Start header  -->
+        
+        <!--Contents-->
+        <main>
+            <!--  Start experience  -->
+            <div class="home-style1">
+                <section class="tc-experience-style1 section-padding-x">
+                    <div class="container-fluid">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-lg-1 order-lg-3">
+                                <div class="exp-num mb-100 wow zoomIn" data-wow-delay="0.3s">
+                                    <h5 class="fsz-18 text-uppercase"> {{ t('years of') }} <br> {{ t('experience') }} </h5>
+                                    <h2 class="num"> 15 </h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 order-lg-2">
+                                <div class="img wow">
+                                    <img src="images/exp.png" alt="" class="img-cover">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="info wow fadeInUp" data-wow-delay="0.3s">
+                                    <h3 class="fsz-45 fw-600 mb-30"> {{ t('about us') }} </h3>
+                                    <div class="text fsz-15 color-666">
+                                        <p class="mb-2">
+                                            {{ t('about-p1') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p2') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p3') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p4') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p5') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p6') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p7') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p8') }}
+                                        </p>
+                                        <p class="mb-2">
+                                            {{ t('about-p9') }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/c_line.png" alt="" class="c-line wow">
+                </section>
+            </div>
+            <!--  End experience  -->
+
+
+            <!--  Start about  -->
+            <section class="tc-about-style7">
+                <div class="container">
+                    <div class="row gx-0 justify-content-between">
+                        <div class="col-lg-3 order-lg-3">
+                            <div class="about-page-rotate">
+                                <div class="rotate-box" data-speed="1" data-lag="0.4">
+                                    <div class="rotate-circle fsz-35 rotate-text d-inline-block text-uppercase">
+                                        <svg class="textcircle" viewBox="0 0 500 500">
+                                            <defs>
+                                                <path id="textcircle"
+                                                    d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z">
+                                                </path>
+                                            </defs>
+                                            <text>
+                                                <textPath xlink:href="#textcircle" textLength="900"> • {{ t('years of experience') }} • {{ t('since') }} 1991 </textPath>
+                                            </text>
+                                        </svg>
+                                    </div>
+                                    <span class="num"> 25 </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-5 order-lg-2">
+                            <div class="info wow fadeInUp slow" data-wow-delay="0.2s">
+                                <div class="text fsz-25 fw-500 mb-20">
+                                    {{ t('about-p10') }}                                
+                                </div>
+                                <div class="text fsz-25 fw-500 mb-20">
+                                    {{ t('about-p11') }}                                
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 order-lg-1">
+                            <div class="numbers mt-5 mt-lg-0">
+                                <div class="number-card wow zoomIn slow" data-wow-delay="0.4s">
+                                    <h2 class="numb"> 95% </h2>
+                                    <small> {{ t('clients Satisfied and repeating') }} </small>
+                                </div>
+                                <div class="number-card wow zoomIn slow" data-wow-delay="0.6s">
+                                    <h2 class="numb"> 100% </h2>
+                                    <small> {{ t('deals done') }} </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  End about  -->
+        
+        
+            <!--  Start process  -->
+            <section class="tc-process-style2">
+                <div class="container">
+                    <h2 class="fsz-45 fw-500 mb-80 text-center"> {{ t('our approach') }} <span class="sub-font fst-italic color-orange1 fw-400"> {{ t('process') }} </span> </h2>
+                    <div class="content">
+                        <div class="row">
+                            
+                            <div class="col-lg-5 z-10 order-lg-2">
+                                <div class="accordion-side wow fadeInUp slow">
+                                    <div class="accordion" id="accordionProcess">
+                                        <div class="accordion-item">
+                                        <div class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                                <span class="num"> 1 / </span> <h3> {{ t('survey') }} </h3>
+                                            </button>
+                                        </div>
+                                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionProcess">
+                                            <div class="accordion-body">
+                                                <div class="text">
+                                                    {{ t('about-p12') }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                        <div class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                                <span class="num"> 2 / </span> <h3> {{ t('design') }} </h3>
+                                            </button>
+                                        </div>
+                                        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionProcess">
+                                            <div class="accordion-body">
+                                                <div class="text">
+                                                    {{ t('about-p13') }}                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                        <div class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                                <span class="num"> 3 / </span> <h3> {{ t('implement') }} </h3>
+                                            </button>
+                                        </div>
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionProcess">
+                                            <div class="accordion-body">
+                                                <div class="text">
+                                                    {{ t('about-p14') }}                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                                <span class="num"> 4 / </span> <h3> {{ t('handover') }} </h3>
+                                            </button>
+                                            </div>
+                                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionProcess">
+                                            <div class="accordion-body">
+                                                <div class="text">
+                                                    {{ t('about-p15') }}
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7 order-lg-1">
+                                <div class="imgs">
+                                    <div class="img" data-lag="0.2">
+                                        <img src="images/innerpages/process/proc1.jpg" alt="" class="img-cover">
+                                        <span class="txt sub-font"> {{ t('design') }} </span>
+                                    </div>
+                                    <div class="img" data-lag="0.4">
+                                        <img src="images/innerpages/process/proc2.jpg" alt="" class="img-cover">
+                                        <span class="txt sub-font"> {{ t('handover') }} </span>
+                                    </div>
+                                    <div class="img" data-lag="0.3">
+                                        <img src="images/innerpages/process/proc3.jpg" alt="" class="img-cover">
+                                        <span class="txt sub-font"> {{ t('survey') }} </span>
+                                    </div>
+                                    <div class="img" data-lag="0.5">
+                                        <img src="images/innerpages/process/proc4.jpg" alt="" class="img-cover">
+                                        <span class="txt sub-font"> {{ t('implement') }} </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/prc_bg.png" alt="" class="bg" data-speed="1.2">
+            </section>
+            <!--  End process  -->
+    
+            <!--  Start testimonials  -->
+            <div class="pt-100">
+                <app-testimonial></app-testimonial>
+            </div>
+            <!--  End testimonials  -->
+        </main>
+        <!--End-Contents-->
+    </div>
+}

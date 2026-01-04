@@ -1,0 +1,252 @@
+@if (languageDirection === 'ltr') {
+    <div class="inner-pages-style1 contact-pg-style1 ltr" *transloco="let t">
+        <!--  Start header  -->
+        <div class="tc-inner-header-style1 pb-100 pt-100">
+            <div class="container">
+                <div class="info">
+                    <h1 class="js-title"> {{ t('contact') }} </h1>
+                    <div class="text fsz-18 color-fff"> {{ t('contact-page-subtitle') }} </div>
+                </div>
+            </div>
+        </div>
+        <!--  Start header  -->
+    
+        <!--Contents-->
+        <main>
+            <!--  Start map  -->
+            <section class="tc-map-style1 pb-60">
+                <div class="map-card wow zoomIn slow" data-wow-delay="0.2s">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71322.51200634701!2d70.72647794077318!3d22.84149759979743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959f40ef04780b1%3A0xe6b5f28f0c78483d!2sEva%20Synthetic%20LLP!5e0!3m2!1sen!2sin!4v1746884522904!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <!--  End map  -->
+    
+            
+            <!--  Start contact-info  -->
+            <section class="tc-contact-info-style1 bg-white pb-50">
+                <div class="container">
+                    <div class="info-cards">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="item mt-50">
+                                    <h6 class="fsz-24 mb-15 fw-bold color-000"> {{ t('factory') }} </h6>
+                                    <ul class="color-666 lh-6">
+                                        <li> <a href="https://maps.app.goo.gl/hSegHUrvbswmEJCA6" target="_blank"> Nani Vavadi- Bagathala road, At.Bagathala, Ta.- Morbi Dist.- Morbi- 363641 Gujarat ( INDIA ) </a> </li>
+                                        <li> <a href="tel:+919979142226"> +91 99791 42226 </a> </li>
+                                        <li> <a href="tel:+917284880088"> +91 72848 80088 </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item mt-50">
+                                    <h6 class="fsz-24 mb-15 fw-bold color-000"> {{ t('office') }} </h6>
+                                    <ul class="color-666 lh-6">
+                                        <li> <a href="https://maps.app.goo.gl/hSegHUrvbswmEJCA6" target="_blank"> Hajivanbhai H. Patel, 4th Floor, Rudra Plaza, Bapa Sitaram Chowk, Ravapar road, Morbi-363641 Gujarat ( INDIA ) </a> </li>
+                                        <li> <a href="tel:+919979142226">Mr. Vimal Thoriya: +91 99791 42226  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  End contact-info  -->
+    
+    
+            <!--  Start contact-form  -->
+            <section class="tc-contact-form-style1">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4">
+                            <div class="info wow fadeInUp slow" data-wow-delay="0.2s">
+                                <h3 class="fsz-45 fw-500 mb-50"> {{ t('contact-form-title') }} </h3>
+                                <p class="fsz-14 color-666 mt-15"> {{ t('contact-form-subtitle') }} </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <form #contactFormElement [formGroup]="contactForm" (ngSubmit)="sendEmail(contactFormElement)" class="form mt-5 mt-lg-0 wow fadeInUp slow">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label> {{ t('full name') }} <span class="color-orange1"> * </span> </label>
+                                            <input formControlName="name" name="name"  class="form-control" placeholder="Enter Name">
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label> {{ t('email address') }} <span class="color-orange1"> * </span> </label>
+                                            <input formControlName="email" name="email"  class="form-control" placeholder="Enter Email">
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label> {{ t('phone number') }} <span class="color-999"> </span> * </label>
+                                            <input formControlName="phone" name="phone"  class="form-control" placeholder="Enter Phone">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-30">
+                                            <label for=""> {{ t('message') }} </label>
+                                            <input formControlName="message" name="message"  class="form-control" placeholder="Enter Message">
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <button type="submit"
+                                    class="butn hover-bg-orange1 text-capitalize bg-white rounded-pill mt-40">
+                                    <span> {{ t('submit') }} <i class="fal fa-arrow-up-right ms-2"></i></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/innerpages/contact_shap.png" alt="" class="shap">
+            </section>
+            <!--  End contact-form  -->
+    
+    
+            <!--  Start chat  -->
+            <section class="tc-chat-style1">
+                <div class="container">
+                    <div class="content">
+                        <p class="lh-5 fsz-18 text-white font-italic px-md-4 text-center"> "{{ t('contact-page-headline') }}"</p>
+                    </div>
+                </div>
+                <img src="images/c_line4.png" alt="" class="c-line wow">
+            </section>
+            <!--  End chat  -->
+    
+    
+        </main>
+        <!--End-Contents-->
+    </div>
+} @else if (languageDirection === 'rtl') {
+    <div class="inner-pages-style1 contact-pg-style1 rtl" *transloco="let t">
+        <!--  Start header  -->
+        <div class="tc-inner-header-style1 pb-100 pt-100">
+            <div class="container">
+                <div class="info ">
+                    <h1 class="js-title"> {{ t('contact') }} </h1>
+                    <div class="text fsz-18 color-fff"> {{ t('contact-page-subtitle') }} </div>
+                </div>
+            </div>
+        </div>
+        <!--  Start header  -->
+    
+        <!--Contents-->
+        <main>
+            <!--  Start map  -->
+            <section class="tc-map-style1 pb-60">
+                <div class="map-card wow zoomIn slow" data-wow-delay="0.2s">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71322.51200634701!2d70.72647794077318!3d22.84149759979743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959f40ef04780b1%3A0xe6b5f28f0c78483d!2sEva%20Synthetic%20LLP!5e0!3m2!1sen!2sin!4v1746884522904!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <!--  End map  -->
+    
+            
+            <!--  Start contact-info  -->
+            <section class="tc-contact-info-style1 bg-white pb-50">
+                <div class="container">
+                    <div class="info-cards">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="item mt-50">
+                                    <h6 class="fsz-24 mb-15 fw-bold color-000"> {{ t('office') }} </h6>
+                                    <ul class="color-666 lh-6">
+                                        <li> <a href="https://maps.app.goo.gl/hSegHUrvbswmEJCA6" target="_blank"> Hajivanbhai H. Patel, 4th Floor, Rudra Plaza, Bapa Sitaram Chowk, Ravapar road, Morbi-363641 Gujarat ( INDIA ) </a> </li>
+                                        <li> <a href="tel:+919979142226">Mr. Vimal Thoriya: +91 99791 42226  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item mt-50">
+                                    <h6 class="fsz-24 mb-15 fw-bold color-000"> {{ t('factory') }} </h6>
+                                    <ul class="color-666 lh-6">
+                                        <li> <a href="https://maps.app.goo.gl/hSegHUrvbswmEJCA6" target="_blank"> Nani Vavadi- Bagathala road, At.Bagathala, Ta.- Morbi Dist.- Morbi- 363641 Gujarat ( INDIA ) </a> </li>
+                                        <li> <a href="tel:+919979142226"> +91 99791 42226 </a> </li>
+                                        <li> <a href="tel:+917284880088"> +91 72848 80088 </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  End contact-info  -->
+    
+    
+            <!--  Start contact-form  -->
+            <section class="tc-contact-form-style1">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4">
+                            <div class="info wow fadeInUp slow" data-wow-delay="0.2s">
+                                <h3 class="fsz-45 fw-500 mb-50"> {{ t('contact-form-title') }} </h3>
+                                <p class="fsz-14 color-666 mt-15"> {{ t('contact-form-subtitle') }} </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <form #contactFormElement [formGroup]="contactForm" (ngSubmit)="sendEmail(contactFormElement)" class="form mt-5 mt-lg-0 wow fadeInUp slow">
+                                <div class="row justify-content-end">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label> {{ t('full name') }} <span class="color-orange1"> * </span> </label>
+                                            <input formControlName="name" name="name"  class="form-control" placeholder="Enter Name">
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label> {{ t('email address') }} <span class="color-orange1"> * </span> </label>
+                                            <input formControlName="email" name="email"  class="form-control" placeholder="Enter Email">
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label> {{ t('phone number') }} <span class="color-999"> </span> * </label>
+                                            <input formControlName="phone" name="phone"  class="form-control" placeholder="Enter Phone">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-30">
+                                            <label for=""> {{ t('message') }} </label>
+                                            <input formControlName="message" name="message"  class="form-control" placeholder="Enter Message">
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <button type="submit"
+                                    class="butn hover-bg-orange1 text-capitalize bg-white rounded-pill mt-40">
+                                    <span> {{ t('submit') }} <i class="fal fa-arrow-up-right ms-2"></i></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/innerpages/contact_shap.png" alt="" class="shap">
+            </section>
+            <!--  End contact-form  -->
+    
+    
+            <!--  Start chat  -->
+            <section class="tc-chat-style1">
+                <div class="container">
+                    <div class="content">
+                        <p class="lh-5 fsz-18 text-white font-italic px-md-4 text-center"> "{{ t('contact-page-headline') }}"</p>
+                    </div>
+                </div>
+                <img src="images/c_line4.png" alt="" class="c-line wow">
+            </section>
+            <!--  End chat  -->
+    
+    
+        </main>
+        <!--End-Contents-->
+    </div>
+}

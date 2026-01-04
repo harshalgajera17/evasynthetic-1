@@ -1,0 +1,130 @@
+@if (languageDirection === 'ltr') {
+    <!--  Start footer  -->
+    <footer class="tc-footer-style1 ltr" *transloco="let t">
+        <div class="container">
+            <div class="top-content section-padding">
+                <div class="row gx-0">
+                    <div class="col-lg-7">
+                        <div class="info-side">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <a class="me-4 footer-logo" routerLink="/home">
+                                        <img src="images/logo/logo.png" alt="eva logo" class="logo">
+                                    </a>
+                                </div>
+                                <div class="text fsz-16 color-333 lh-3 fw-500 me-5 w-75">
+                                    {{ t( 'footer-text' ) }}
+                                </div>
+                            </div>
+                            <div class="branch-card">
+                                <h5 class="mb-20 mt-5 fw-600"> {{ t('email') }} </h5>
+                                <ul class="footer-links">
+                                    <li> {{ t( "FOR OTHER INQUIRY" ) }}: <a href="mailto:info@evasynthetic.com"> {{infoEmail}} </a> </li>
+                                    <li> {{ t( "SALES INQUIRY" ) }}: <a href="mailto:salse@evasynthetic.com"> {{salseEmail}} </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="branch-card">
+                            <h5 class="mb-20 mt-5 mt-lg-0 fw-600"> {{ t('factory') }} </h5>
+                            <ul class="footer-links">
+                                <li> <a href="https://maps.app.goo.gl/hSegHUrvbswmEJCA6" target="_blank"> Nani Vavadi- Bagathala road, At.Bagathala, Ta.- Morbi Dist.- Morbi- 363641 Gujarat ( INDIA ) </a> </li>
+                                <li> <a href="tel:+919979142226"> +91 99791 42226 </a> </li>
+                                <li> <a href="tel:+917284880088"> +91 72848 80088 </a> </li>
+                            </ul>
+                        </div>
+                        <div class="branch-card mt-5">
+                            <h5 class="mb-20 mt-5 mt-lg-0 fw-600"> {{ t('office') }} </h5>
+                            <ul class="footer-links">
+                                <li> <a href="https://maps.app.goo.gl/hSegHUrvbswmEJCA6" target="_blank"> Hajivanbhai H. Patel, 4th Floor, Rudra Plaza, Bapa Sitaram Chowk, Ravapar road, Morbi-363641 Gujarat ( INDIA ) </a> </li>
+                                <li> <a href="tel:+919979142226">Mr. Vimal Thoriya: +91 99791 42226  </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                        <p class="fsz-13">  © 2016 EVA Synthetic LLP. All Rights Reserved</p>
+                    </div>
+                    <div class="col-lg-7 d-none d-lg-block">
+                        <div class="foot-links mt-4 mt-lg-0 d-flex justify-content-end">
+                            <a routerLink="/home"> {{ t('home') }} </a>
+                            <a routerLink="/about-us"> {{ t( 'about' ) }} </a>
+                            <a routerLink="/products"> {{ t( 'our product' ) }} </a>
+                            <a routerLink="/contact-us"> {{ t( 'contact' ) }} </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  End footer  -->
+} @else if (languageDirection === 'rtl') {
+    <!--  Start footer  -->
+    <footer class="tc-footer-style1 rtl" *transloco="let t">
+        <div class="container">
+            <div class="top-content section-padding">
+                <div class="row gx-0">
+                    <div class="col-lg-5">
+                        <div class="branch-card">
+                            <h5 class="mb-20 mt-5 mt-lg-0 fw-600"> {{ t('factory') }} </h5>
+                            <ul class="footer-links">
+                                <li> <a href="https://maps.app.goo.gl/hSegHUrvbswmEJCA6" target="_blank"> Nani Vavadi- Bagathala road, At.Bagathala, Ta.- Morbi Dist.- Morbi- 363641 Gujarat ( INDIA ) </a> </li>
+                                <li> <a href="tel:+919979142226"> +91 99791 42226 </a> </li>
+                                <li> <a href="tel:+917284880088"> +91 72848 80088 </a> </li>
+                            </ul>
+                        </div>
+                        <div class="branch-card mt-5">
+                            <h5 class="mb-20 mt-5 mt-lg-0 fw-600"> {{ t('office') }} </h5>
+                            <ul class="footer-links">
+                                <li> <a href="https://maps.app.goo.gl/hSegHUrvbswmEJCA6" target="_blank"> Hajivanbhai H. Patel, 4th Floor, Rudra Plaza, Bapa Sitaram Chowk, Ravapar road, Morbi-363641 Gujarat ( INDIA ) </a> </li>
+                                <li> <a href="tel:+919979142226">Mr. Vimal Thoriya: +91 99791 42226  </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="info-side">
+                            <div class="d-flex align-items-center">
+                                <div class="text fsz-16 color-333 lh-3 fw-500 ms-5 w-75">
+                                    {{ t( 'footer-text' ) }}
+                                </div>
+                                <div>
+                                    <a class="ms-4 footer-logo" routerLink="/home">
+                                        <img src="images/logo/logo.png" alt="eva logo" class="logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="branch-card">
+                                <h5 class="mb-20 mt-5 fw-600"> {{ t('email') }} </h5>
+                                <ul class="footer-links">
+                                    <li> <a href="mailto:salse@evasynthetic.com"> {{salseEmail}} </a> :{{ t( "SALES INQUIRY" ) }} </li>
+                                    <li> <a href="mailto:info@evasynthetic.com"> {{infoEmail}} </a> :{{ t( "PURCHASE INQUIRY" ) }} </li>
+                                    <li> <a href="mailto:evasynthetic@gmail.com"> {{evaEmail}} </a> :{{ t( "FOR OTHER INQUIRY" ) }} </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="row">
+                    <div class="col-lg-7 d-none d-lg-block">
+                        <div class="foot-links mt-4 mt-lg-0 d-flex justify-content-start">
+                            <a routerLink="/contact-us"> {{ t( 'contact' ) }} </a>
+                            <a routerLink="/products"> {{ t( 'our product' ) }} </a>
+                            <a routerLink="/about-us"> {{ t( 'about' ) }} </a>
+                            <a routerLink="/home"> {{ t('home') }} </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <p class="fsz-13">  © 2016 EVA Synthetic LLP. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  End footer  -->
+}

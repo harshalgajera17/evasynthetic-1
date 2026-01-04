@@ -1,0 +1,130 @@
+<!-- *ngIf="languageDirection === 'ltr'" -->
+@if (languageDirection === 'ltr') {
+    <div class="home-style1 ltr" [ngClass]="{'header-innerpages': !isHomePage}">
+        <!--  Start navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark tc-navbar-style1 section-padding-x" *transloco="let t">
+            <div class="container-fluid content">
+                <a class="navbar-brand" routerLink="/home">
+                    <img src="images/logo/logo.png" alt="eva logo" class="logo">
+                </a>
+                <div class="d-flex align-items-center">
+                    <div class="nav-side d-block d-lg-none me-2">
+                        <div class="dropdown language-dropdown">
+                            <button class="bg-transparent border-0 text-white language-btn d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-light fa-language"></i> <i class="fa-regular fa-angle-down small ms-2"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li *ngFor="let lang of availableLangs; last as last"
+                            (click)="changeLang(lang.id)" [class.mr-10]="!last" [class.active]="activeLang === lang.id"
+                            [class.menu-item]="activeLang !== lang.id">{{ lang.label }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/home" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }">{{ t('home') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/about-us" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }">{{ t( 'about' ) }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/products" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }">{{ t( 'our product' ) }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/contact-us" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }">{{ t( 'contact' ) }}</a>
+                        </li>
+                    </ul>
+                    <div class="nav-side d-none d-lg-block">
+                        <div class="dropdown language-dropdown">
+                            <button class="bg-transparent border-0 text-white language-btn d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-light fa-language"></i> <i class="fa-regular fa-angle-down small ms-2"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li *ngFor="let lang of availableLangs; last as last"
+                            (click)="changeLang(lang.id)" [class.mr-10]="!last" [class.active]="activeLang === lang.id"
+                            [class.menu-item]="activeLang !== lang.id">{{ lang.label }}</li>
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--  End navbar  -->
+    </div>
+
+} @else if (languageDirection === 'rtl') {
+    <div class="home-style1 rtl" [ngClass]="{'header-innerpages': !isHomePage}">
+        <!--  Start navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark tc-navbar-style1 section-padding-x" *transloco="let t">
+            <div class="container-fluid content">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="nav-side d-none d-lg-block">
+                        <div class="dropdown language-dropdown">
+                            <button class="bg-transparent border-0 text-white language-btn d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-light fa-language"></i> <i class="fa-regular fa-angle-down small ms-2"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li *ngFor="let lang of availableLangs; last as last"
+                            (click)="changeLang(lang.id)" [class.mr-10]="!last" [class.active]="activeLang === lang.id"
+                            [class.menu-item]="activeLang !== lang.id">{{ lang.label }}</li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/contact-us" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{ exact: true }">{{ t( 'contact' ) }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/products" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }">{{ t( 'our product' ) }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/about-us" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }">{{ t( 'about' ) }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/home" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }">{{ t('home') }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="nav-side d-block d-lg-none ms-2">
+                        <div class="dropdown language-dropdown">
+                            <button class="bg-transparent border-0 text-white language-btn d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-light fa-language"></i> <i class="fa-regular fa-angle-down small ms-2"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li *ngFor="let lang of availableLangs; last as last"
+                            (click)="changeLang(lang.id)" [class.mr-10]="!last" [class.active]="activeLang === lang.id"
+                            [class.menu-item]="activeLang !== lang.id">{{ lang.label }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a class="navbar-brand ms-5 me-0" routerLink="/home">
+                    <img src="images/logo/logo.png" alt="eva logo" class="logo">
+                </a>
+            </div>
+        </nav>
+        <!--  End navbar  -->
+    </div>
+}

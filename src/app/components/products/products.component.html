@@ -1,0 +1,71 @@
+@if (languageDirection === 'ltr') {
+    <div class="inner-pages-style1 services-pg-style1 ltr" *transloco="let t">
+        <div class="tc-inner-header-style1 pb-100 pt-100">
+            <div class="container">
+                <div class="info">
+                    <h1 class="js-title"> {{ t('products') }} </h1>
+                    <div class="text fsz-18 color-fff"> {{ t('products-page-subtitle') }} </div>
+                </div>
+            </div>
+        </div>
+        <!--  Start header  -->
+    
+        <!--Contents-->
+        <main>
+            <!-- products category start -->
+            <app-products-category></app-products-category>
+            <!-- products category end -->
+              
+    
+            <!--  Start process  -->
+            <app-process-work></app-process-work>
+            <!--  End process  -->
+    
+    
+            <!--  Start Product  -->
+            <app-product-list></app-product-list>
+            <!--  End Product  -->
+    
+    
+            <!--  Start testimonials  -->
+              <app-testimonial></app-testimonial>
+            <!--  End testimonials  -->
+        </main>
+        <!--End-Contents-->
+    </div>
+} @else if (languageDirection === 'rtl') {
+    <div class="inner-pages-style1 services-pg-style1 rtl" *transloco="let t">
+        <div class="tc-inner-header-style1 pb-100 pt-100">
+            <div class="container">
+                <div class="info">
+                    <h1 class="js-title"> {{ t('products') }} </h1>
+                    <div class="text fsz-18 color-fff"> {{ t('products-page-subtitle') }} </div>
+                </div>
+            </div>
+        </div>
+        <!--  Start header  -->
+    
+        <!--Contents-->
+        <main>
+            <!-- products category start -->
+            <app-products-category></app-products-category>
+            <!-- products category end -->
+              
+    
+            <!--  Start process  -->
+            <app-process-work></app-process-work>
+            <!--  End process  -->
+    
+    
+            <!--  Start Product  -->
+            <app-product-list></app-product-list>
+            <!--  End Product  -->
+    
+    
+            <!--  Start testimonials  -->
+              <app-testimonial></app-testimonial>
+            <!--  End testimonials  -->
+        </main>
+        <!--End-Contents-->
+    </div>
+}

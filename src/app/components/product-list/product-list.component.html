@@ -1,0 +1,964 @@
+<!-- <section class="tc-projects-style1">
+    <div class="container">
+        <div class="title mb-70">
+            <h2 class="fsz-45"> Product Gallery </h2>
+        </div>
+        <div class="tabs-links mb-50">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-tab1-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-tab1" class="nav-link" [class.active]="activeTab === 'tab1'"
+                                (click)="setActive('tab1')">Automotive</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-tab2-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-tab2" class="nav-link" [class.active]="activeTab === 'tab2'"
+                                (click)="setActive('tab2')">Bag Materials</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-tab3-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-tab3" class="nav-link" [class.active]="activeTab === 'tab3'"
+                                (click)="setActive('tab3')">Footware</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-tab4-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-tab4" class="nav-link" [class.active]="activeTab === 'tab4'"
+                                (click)="setActive('tab4')">Furnishing</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" [class.show]="activeTab === 'tab1'" [class.active]="activeTab === 'tab1'"
+                    id="pills-proj1">
+                    <div class="projects-content float_box_container">
+                        <div class="projects-slider">
+                            <div class="owl-carousel owl-p1 owl-theme my-gallery">
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-104-B.BEG.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-104-B.BEG.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-104-B.BEG</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-104-BLACK.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-104-BLACK.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-104-BLACK</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-104-D.GREY.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-104-D.GREY.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-104-D.GREY</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-105-BLACK.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-105-BLACK.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-105-BLACK</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-105-L.GREY.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-105-L.GREY.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-105-L.GREY</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-105-MASHROOM.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-105-MASHROOM.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-105-MASHROOM</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-105-OYESTER.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-105-OYESTER.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-105-OYESTER</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-105-TAN.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-105-TAN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-105-TAN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-105-WHITE.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-105-WHITE.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-105-WHITE</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" [class.show]="activeTab === 'tab2'" [class.active]="activeTab === 'tab2'"
+                    id="pills-proj2">
+                    <div class="projects-content float_box_container">
+                        <div class="projects-slider">
+                            <div class="owl-carousel owl-p1 owl-theme my-gallery">
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-111-EP-119-BLUE.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-111-EP-119-BLUE.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-111-EP-119-BLUE</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-111-EP-119-BROWN.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-111-EP-119-BROWN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-111-EP-119-BROWN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-111-EP-119-TAN.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-111-EP-119-TAN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-111-EP-119-TAN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-111-EP-119-VIOLET.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-111-EP-119-VIOLET.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-111-EP-119-VIOLET</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-113-BEIGE-16.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-113-BEIGE-16.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-113-BEIGE-16</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-113-PINK-05.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-113-PINK-05.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-113-PINK-05</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-113-PURPLE-10.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-113-PURPLE-10.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-113-PURPLE-10</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-113-RED.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-113-RED.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-113-RED</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-113-SEA GREEN.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-113-SEA GREEN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-113-SEA GREEN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-119-EP-105-BEIGE.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-119-EP-105-BEIGE.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-119-EP-105-BEIGE</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-119-EP-105-IVORY.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-119-EP-105-IVORY.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-119-EP-105-IVORY</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-119-EP-105-MAROON.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-119-EP-105-MAROON.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-119-EP-105-MAROON</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-119-EP-105-PEACH.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-119-EP-105-PEACH.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-119-EP-105-PEACH</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-119-EP-105-TAN.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-119-EP-105-TAN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-119-EP-105-TAN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" [class.show]="activeTab === 'tab3'" [class.active]="activeTab === 'tab3'"
+                    id="pills-proj3">
+                    <div class="projects-content float_box_container">
+                        <div class="projects-slider">
+                            <div class="owl-carousel owl-p1 owl-theme my-gallery">
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/CEDRO-EP-105-BEIGE-18.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/CEDRO-EP-105-BEIGE-18.jpg" alt=""
+                                                class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>CEDRO-EP-105-BEIGE-18</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/CEDRO-ORANGE-03.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/CEDRO-ORANGE-03.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>CEDRO-ORANGE-03</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/CEDRO-TAN.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/CEDRO-TAN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>CEDRO-TAN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/CEDRO-YELLOW.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/CEDRO-YELLOW.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>CEDRO-YELLOW</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-101-EP-101-BEIGE-22.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-101-EP-101-BEIGE-22.jpg" alt=""
+                                                class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-101-EP-101-BEIGE-22</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-101-EP-102-BEIGE-22.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-101-EP-102-BEIGE-22.jpg" alt=""
+                                                class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-101-EP-102-BEIGE-22</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-104-EP-110-WHITE.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-104-EP-110-WHITE.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-104-EP-110-WHITE</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-104-EP-119-BEIGE-22.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-104-EP-119-BEIGE-22.jpg" alt=""
+                                                class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-104-EP-119-BEIGE-22</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-118-EP-105-BROWN.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-118-EP-105-BROWN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-118-EP-105-BROWN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-118-EP-105-TAN-09.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-118-EP-105-TAN-09.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-118-EP-105-TAN-09</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/EV-1006-EP-105-TEN-06.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/EV-1006-EP-105-TEN-06.jpg" alt=""
+                                                class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>EV-1006-EP-105-TEN-06</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/FRISCO-MUSTER.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/FRISCO-MUSTER.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>FRISCO-MUSTER</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/FRISCO-P GREEN.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/FRISCO-P GREEN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>FRISCO-P GREEN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/FRISCO-PURPLE.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/FRISCO-PURPLE.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>FRISCO-PURPLE</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/FRISCO-PURPLE-09.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/FRISCO-PURPLE-09.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>FRISCO-PURPLE-09</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/FRISCO-RED-03.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/FRISCO-RED-03.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>FRISCO-RED-03</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/MOCA-BLACK.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/MOCA-BLACK.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>MOCA-BLACK</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/MOCA-C.BROWN.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/MOCA-C.BROWN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>MOCA-C.BROWN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/MOCA-ED-119-EP-105-GREY-05.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/MOCA-ED-119-EP-105-GREY-05.jpg" alt=""
+                                                class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>MOCA-ED-119-EP-105-GREY-05</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/MOCA-ED-119-EP-105-MOUSE-01.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/MOCA-ED-119-EP-105-MOUSE-01.jpg" alt=""
+                                                class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>MOCA-ED-119-EP-105-MOUSE-01</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/R-8-BEIGE.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/R-8-BEIGE.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>R-8-BEIGE</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/S.MATT-EP-106-CREAM-09.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/S.MATT-EP-106-CREAM-09.jpg" alt=""
+                                                class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>S.MATT-EP-106-CREAM-09</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/VICENZA-BLACK.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/VICENZA-BLACK.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>VICENZA-BLACK</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/VICENZA-BROWN-013.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/VICENZA-BROWN-013.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>VICENZA-BROWN-013</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/VICENZA-CREAM.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/VICENZA-CREAM.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>VICENZA-CREAM</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" [class.show]="activeTab === 'tab4'" [class.active]="activeTab === 'tab4'"
+                    id="pills-proj4">
+                    <div class="projects-content float_box_container">
+                        <div class="projects-slider">
+                            <div class="owl-carousel owl-p1 owl-theme my-gallery">
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-101-WHITE.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-101-WHITE.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-101-WHITE</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-102-BROWN-09.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-102-BROWN-09.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-102-BROWN-09</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-102-M.CREAM.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-102-M.CREAM.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-102-M.CREAM</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-102-PINK-05.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-102-PINK-05.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-102-PINK-05</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-102-PURPLE-10.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-102-PURPLE-10.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-102-PURPLE-10</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-106-M.BROWN.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-106-M.BROWN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-106-M.BROWN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-106-M.CREAM.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-106-M.CREAM.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-106-M.CREAM</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-109-L.COPER.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-109-L.COPER.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-109-L.COPER</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-109-M.CREAM.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-109-M.CREAM.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-109-M.CREAM</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-109-M.MAROON.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-109-M.MAROON.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-109-M.MAROON</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-112-BLACK.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-112-BLACK.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-112-BLACK</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-112-IVORY.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-112-IVORY.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-112-IVORY</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-112-OYESTER.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-112-OYESTER.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-112-OYESTER</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-115-EP-105-BEIGE.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-115-EP-105-BEIGE.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-115-EP-105-BEIGE</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-115-EP-105-IVORY.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-115-EP-105-IVORY.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-115-EP-105-IVORY</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-115-EP-105-PEACH.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/ED-115-EP-105-PEACH.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-115-EP-105-PEACH</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-115-EP-105-TAN.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-115-EP-105-TAN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-115-EP-105-TAN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-119-M.BROWN.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-119-M.BROWN.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-119-M.BROWN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/ED-119-M.CREAM.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/ED-119-M.CREAM.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>ED-119-M.CREAM</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/EV-1007-EP-105-BEIGE.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/EV-1007-EP-105-BEIGE.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>EV-1007-EP-105-BEIGE</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/EV-1007-EP-105-BLACK.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/EV-1007-EP-105-BLACK.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>EV-1007-EP-105-BLACK</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/EV-1007-EP-105-IVORY.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/EV-1007-EP-105-IVORY.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>EV-1007-EP-105-IVORY</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/EV-1007-EP-105-MAROON.jpg" class="img"
+                                            data-fancybox="proj">
+                                            <img src="images/gallery/EV-1007-EP-105-MAROON.jpg" alt=""
+                                                class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>EV-1007-EP-105-MAROON</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/EV-1007-WHITE.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/EV-1007-WHITE.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>EV-1007-WHITE</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/VICENZA-BROWN-013.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/VICENZA-BROWN-013.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>VICENZA-BROWN-013</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="project-card">
+                                        <a href="images/gallery/VICENZA-CREAM.jpg" class="img" data-fancybox="proj">
+                                            <img src="images/gallery/VICENZA-CREAM.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>VICENZA-CREAM</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Swiper Container -->
+<!-- <div class="swiper mySwiper" #swiperRef>
+    <div class="my-gallery">
+        <div class="swiper-slide" *ngFor="let image of images">
+            <a [href]="image.src" (click)="openGallery($event, image.index)">
+                <img [src]="image.src" [alt]="image.title" class="img-cover" />
+            </a>
+        </div>
+    </div>
+</div> -->
+
+@if (languageDirection === 'ltr') {
+    <!--  Start latest-Product  -->
+    <section class="portfolio-pg-style1 ltr" *transloco="let t">
+        <div class="tc-latest-cases-style1">
+            <div class="container">
+                <div class="content">
+                    <h3 class="fsz-45 text-capitalize mb-90 js-splittext-lines"> {{ t('our latest cases') }} </h3>
+                    <div class="cases">
+                        <div class="cases-content wow fadeInUp slow" data-wow-delay="0.4s">
+                            <div class="row mixitup my-gallery">
+                                <div class="col-lg-4 mix-item Architecture Landscape">
+                                    <div class="case-card my-gallery">
+                                        <a href="images/innerpages/inner-header-1.jpg" class="img" data-fancybox="cases">
+                                            <img src="images/innerpages/inner-header-1.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>{{ t('car set cover') }}</h5>
+                                            <p class="text">{{ t('p-car-text') }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mix-item Interior">
+                                    <div class="case-card">
+                                        <a href="images/innerpages/inner-header-3.jpg" class="img" data-fancybox="cases">
+                                            <img src="images/innerpages/inner-header-3.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>{{ t('office chair') }}</h5>
+                                            <p class="text">{{ t('p-office-text') }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mix-item Interior">
+                                    <div class="case-card">
+                                        <a href="images/innerpages/inner-header-5.jpg" class="img" data-fancybox="cases">
+                                            <img src="images/innerpages/inner-header-5.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>{{ t('home chair') }}</h5>
+                                            <p class="text">{{ t('p-home-text') }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  End latest-Product  -->
+} @else if (languageDirection === 'rtl') {
+    <!--  Start latest-Product  -->
+    <section class="portfolio-pg-style1 rtl" *transloco="let t">
+        <div class="tc-latest-cases-style1">
+            <div class="container">
+                <div class="content">
+                    <h3 class="fsz-45 text-capitalize mb-90 js-splittext-lines"> {{ t('our latest cases') }} </h3>
+                    <div class="cases">
+                        <div class="cases-content wow fadeInUp slow" data-wow-delay="0.4s">
+                            <div class="row mixitup my-gallery">
+                                <div class="col-lg-4 mix-item Interior">
+                                    <div class="case-card">
+                                        <a href="images/innerpages/inner-header-5.jpg" class="img" data-fancybox="cases">
+                                            <img src="images/innerpages/inner-header-5.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>{{ t('home chair') }}</h5>
+                                            <p class="text">{{ t('p-home-text') }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mix-item Interior">
+                                    <div class="case-card">
+                                        <a href="images/innerpages/inner-header-3.jpg" class="img" data-fancybox="cases">
+                                            <img src="images/innerpages/inner-header-3.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>{{ t('office chair') }}</h5>
+                                            <p class="text">{{ t('p-office-text') }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mix-item Architecture Landscape">
+                                    <div class="case-card my-gallery">
+                                        <a href="images/innerpages/inner-header-1.jpg" class="img" data-fancybox="cases">
+                                            <img src="images/innerpages/inner-header-1.jpg" alt="" class="img-cover">
+                                        </a>
+                                        <div class="info">
+                                            <h5>{{ t('car set cover') }}</h5>
+                                            <p class="text">{{ t('p-car-text') }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  End latest-Product  -->
+}
